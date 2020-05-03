@@ -4,17 +4,33 @@
   "description": "A modern javascript boilerplate",
   "main": "index.js",
   "scripts": {
+    "build": "babel src/index.js --out-file public/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/LordShiva05/create-js-app.git"
   },
-  "keywords": ["js", "javascript", "modern", "boilerplate", "app", "application"],
+  "keywords": [
+    "js",
+    "javascript",
+    "modern",
+    "boilerplate",
+    "app",
+    "application"
+  ],
   "author": "Shivam Vaishya",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LordShiva05/create-js-app/issues"
   },
-  "homepage": "https://github.com/LordShiva05/create-js-app#readme"
+  "homepage": "https://github.com/LordShiva05/create-js-app#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7"
+  }
 }
